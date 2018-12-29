@@ -1,0 +1,63 @@
+:root{
+    --first:#1c1c1c;
+    --second:#3a3a3a;
+    --third:#4d4d4d;
+    --fourth:#616060;
+    --fifth:#757575;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-gap: 20px;
+    background: #a0a0a0;
+}
+.logo,
+.search{
+    background: #4e4e4e
+}
+.section{
+   text-align: center;
+   display: grid;
+}
+.section >*{
+    margin-bottom: .5em;
+    color: white
+}
+.icon{
+    padding: .5em;
+    background: var(--fourth);
+    justify-self: center
+}
+.icon span{
+    padding: .2em;
+    font-size: 1.3em;
+    border: 1px solid white;
+    border-radius: 5px
+}
+.title{
+    padding: .5em 0;
+    font-size: 1.5em;
+    background: var(--second);
+}
+.description{
+    padding: .5em;
+    font-style: italic;
+    background: var(--third);
+}
+/*main*/
+
+.main{
+    display: grid;
+    grid-template-areas: 
+    "main_tittle main_tittle"
+    "article1 article2";
+    background: linear-gradient(90deg,#a0a0a0 0%,#a9a9a9 49.6%, #8b8b8b 49.8%,#a9a9a9 50%, #a0a0a0 100%)
+}
+.main_title{
+    grid-area: main_tittle
+}
