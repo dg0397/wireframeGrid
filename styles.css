@@ -61,7 +61,6 @@ header{
     ". main_tittle ."
     "article1 . article2";
     padding-top: 2em;
-    height: 80vh;
     background: linear-gradient(90deg,#a0a0a0 0%,#a9a9a9 49.6%, #8b8b8b 49.8%,#b9b9b9 50%)
 }
 .main_title{
@@ -94,7 +93,7 @@ header{
 }
 .article1, 
 .article2{
-    align-self: center;
+    align-self: stretch;
     display: grid;
     justify-items: flex-start;
     justify-content: center;
@@ -136,17 +135,15 @@ header{
 /*Articles section*/
 .articles{
     display: grid;
-    align-content: center;
     grid-template-columns: repeat(3,1fr);
-    padding-top: 1em;
+    padding: 3em 0;
     background: #d4d4d4;
-    height: 90vh;
+    justify-items: center;
 }
 .article{
     display: grid;
     padding: 1em 2em;
     color: white;
-    height: auto;
 }
 .article .date{
     background: var(--fourth);
